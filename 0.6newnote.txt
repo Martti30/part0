@@ -1,0 +1,9 @@
+title NEW Note
+
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa{"content": "hola1","date": "2022-11-14T16:08:17.547Z"}
